@@ -1,0 +1,20 @@
+@BuberDinner.API_HostAddress = http://localhost:5101
+
+post {{BuberDinner.API_HostAddress}}/auth/register
+content-type: application/json
+
+{
+  "firstName": "Mohamed",
+  "lastName": "Gamal",
+  "email": "Gamal@gmail.com",
+  "password": "jimmy0112"
+}
+###
+
+post {{BuberDinner.API_HostAddress}}/auth/login
+content-type: application/json
+
+{
+  "email": "Gamal@gmail.com",
+  "password": "jimmy0112"
+}
